@@ -16,7 +16,7 @@ public class TabelaLojaControlle
 		iniciaListaDep();
 	}
 	
-	public void iniciaListaDep()
+	private void iniciaListaDep()
 	{
 		int tam = listaDep.length;
 		
