@@ -12,8 +12,6 @@ public class Main {
 		
 		int op = -1;
 		TabelaLojaControlle controllDep = new TabelaLojaControlle();
-		Loja l = new Loja(0, "ElectricDesire", "Venda de servicos tecnicos");
-		Loja cL = new Loja(0, "ElectricDesire", null);
 		
 		while(op != 9)
 		{
