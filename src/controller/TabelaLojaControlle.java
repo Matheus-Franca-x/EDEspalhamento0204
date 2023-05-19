@@ -1,5 +1,7 @@
 package controller;
 
+import javax.swing.JOptionPane;
+
 import matheus.ListaObject.ListaObject;
 import model.Loja;
 
@@ -30,7 +32,7 @@ public class TabelaLojaControlle
 		
 		if (listaDep[posit].isEmpty())
 		{
-			listaDep[posit].addFirst(dep);			
+			listaDep[posit].addFirst(dep);
 		}
 		else
 		{
@@ -50,12 +52,13 @@ public class TabelaLojaControlle
 				Loja consultDep = (Loja) listaDep[i].get(j);
 				if (consultDep.getNomeDep().equals( dep.getNomeDep()))
 				{
-					System.out.println(consultDep.toString());
+					JOptionPane.showMessageDialog(null, consultDep.toString());
 					return dep;
 				}
 			}
 		}
 		
+		JOptionPane.showMessageDialog(null, "Nao ha nenhuma loja com esse nome!", "Erro", JOptionPane.ERROR_MESSAGE);
 		return dep;
 	}
 	
@@ -76,6 +79,8 @@ public class TabelaLojaControlle
 				}
 			}
 		}
+		
+		JOptionPane.showMessageDialog(null, "Nao ha nenhuma loja com esse nome!", "Erro", JOptionPane.ERROR_MESSAGE);
 		return dep;
 	}
 }

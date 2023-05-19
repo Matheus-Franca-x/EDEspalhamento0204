@@ -33,11 +33,12 @@ public class Loja
 
 	@Override
 	public String toString() {
-		return "Loja [andar=" + andar + ", nomeDep=" + nomeDep + ", descDep=" + descDep + "]";
+		return "Nome da Loja: " + nomeDep + "\n" + andar + "° Andar \nDescricao: " + descDep;
 	}
 
 	@Override
-	public int hashCode() {
+	public int hashCode() 
+	{
 		return andar;
 	}
 
