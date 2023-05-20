@@ -25,7 +25,7 @@ public class Main {
 				{
 				case 1:
 					
-					int andar = Integer.parseInt(JOptionPane.showInputDialog("Digite o anda de que deseja(0 a 3): "));
+					int andar = Integer.parseInt(JOptionPane.showInputDialog("Digite o andar de que deseja(0 a 3): "));
 					
 					if (andar < 0 || andar > 3)
 					{
